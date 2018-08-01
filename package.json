@@ -1,0 +1,20 @@
+{
+  "name": "daily-coding-problem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlyahovich/daily-coding-problem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlyahovich/daily-coding-problem/issues"
+  },
+  "homepage": "https://github.com/vlyahovich/daily-coding-problem#readme"
+}
