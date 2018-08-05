@@ -6,6 +6,7 @@ const {
 } = require('./numways-staircase/numwaysStaircase');
 const {longestSubstringK} = require('./lingest-substring/longestSubstring');
 const {estimatePi} = require('./area-of-circle/areaOfCircle');
+const {logRecords} = require('./log-records/logRecords');
 
 // console.log('staircases:');
 // console.log('recursive 5 stairs', numwaysStaircaseR(5));
@@ -18,5 +19,24 @@ const {estimatePi} = require('./area-of-circle/areaOfCircle');
 //console.log(longestSubstringK('aabbcc', 2));
 //console.log(longestSubstringK('aabbcc', 3));
 
-console.log('estimate pi:');
-console.log(estimatePi(1000));
+//console.log('estimate pi:');
+//console.log(estimatePi(1000));
+
+console.log('log records:');
+
+let records = logRecords(10);
+
+for (let i = 0; i < 20; i++) {
+    records.record(i);
+}
+
+console.log(records.getLast(0));
+console.log(records.getLast(1));
+console.log(records.getLast(3));
+console.log(records.getLast(10));
+
+records.record(20);
+records.record(21);
+
+console.log(records.getLast(1));
+console.log(records.getLast(5));
