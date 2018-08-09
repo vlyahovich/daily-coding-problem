@@ -1,3 +1,4 @@
+const LinkedList = require('./util/linked-list/LinkedList');
 const {
     numwaysStaircaseR,
     numwaysStaircaseDP,
@@ -8,6 +9,7 @@ const {longestSubstringK} = require('./lingest-substring/longestSubstring');
 const {estimatePi} = require('./area-of-circle/areaOfCircle');
 const {logRecords} = require('./log-records/logRecords');
 const {subarraySumm} = require('./subarray-summ/subarraySumm');
+const {listsIntersection} = require('./lists-intersection/listsIntersection');
 
 // console.log('staircases:');
 // console.log('recursive 5 stairs', numwaysStaircaseR(5));
@@ -42,5 +44,8 @@ const {subarraySumm} = require('./subarray-summ/subarraySumm');
 // console.log(records.getLast(1));
 // console.log(records.getLast(5));
 
-console.log('subarray summ:');
-console.log(subarraySumm([10, 5, 2, 7, 8, 7], 3));
+// console.log('subarray summ:');
+// console.log(subarraySumm([10, 5, 2, 7, 8, 7], 3));
+
+console.log('lists intersection:');
+console.log(listsIntersection(new LinkedList([3, 7, 8, 10]), new LinkedList([99, 1, 8, 10])));
